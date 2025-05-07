@@ -212,7 +212,7 @@ async def websocket_endpoint(websocket: WebSocket, chat_id: str, name: str):
             print(f"Error handling disconnect: {e}")
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 8000))
+    port = int(os.getenv("PORT", 4000))
     uvicorn.run(
         app,
         host="0.0.0.0",
